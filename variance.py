@@ -7,7 +7,7 @@ def get_average(numbers):
     running_total = 0
     for num in numbers:
         running_total += num
-    average = running_total/len(numbers)
+    average = running_total
     return average
 
 def get_variance(numbers):
@@ -17,6 +17,26 @@ def get_variance(numbers):
         deviation_sum = deviation_sum + (num - average)**2
     return deviation_sum/len(numbers)
 
+def get_dot_product(xs, ys):
+    dot_product = 0
+    for x,y in zip(xs, ys):
+        dot_product += x*y
+    return dot_product
+
 if __name__=="__main__":
     data = [1,2,2,3]
-    print(get_variance(data))
+    print(get_variance(numbers=data))
+    #get the standard deviation
+
+    a = [1,2,3]
+    b = [2,4,5]
+
+    print(get_dot_product(a,b))
+
+    #corrupt_data = [1,2,2,"3"]
+    #print(get_variance(numbers=corrupt_data))
+
+    a = [2.1, 2.5, 3.6, 4.0]
+    b = [8,   10,  12,  14 ]
+
+    #print(get_covariance(x = a, y = b))
