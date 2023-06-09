@@ -44,3 +44,4 @@ if __name__=="__main__":
 
     #print(get_covariance(x = a, y = b))
     # THE ANSWER IS 2.267
+    print()
