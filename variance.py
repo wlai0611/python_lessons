@@ -26,8 +26,11 @@ def get_dot_product(xs, ys):
 if __name__=="__main__":
     data = [1,2,2,3]
     print(get_variance(numbers=data))
+    # THE ANSWER IS 0.5, FIX ERROR AND MAKE IT OUTPUT 0.5
+
     #get the standard deviation
 
+    #THE PURPOSE OF THIS NEXT 4 LINES IS JUST TO SHOW HOW TO ITERATE THROUGH MULTIPLE VARIABLES
     a = [1,2,3]
     b = [2,4,5]
 
@@ -40,3 +43,4 @@ if __name__=="__main__":
     b = [8,   10,  12,  14 ]
 
     #print(get_covariance(x = a, y = b))
+    # THE ANSWER IS 2.267
